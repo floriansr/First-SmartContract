@@ -1,14 +1,22 @@
-import React from 'react';
+import * as React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
+import { Drizzle } from "@drizzle/store";
+import { drizzleReactHooks } from "@drizzle/react-plugin";
+import options from "./options";
+
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+const drizzle = new Drizzle(options);
+const { DrizzleProvider } = drizzleReactHooks;
+
+
 ReactDOM.render(
-  <React.StrictMode>
+  <DrizzleProvider drizzle={drizzle}>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </DrizzleProvider>,
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
