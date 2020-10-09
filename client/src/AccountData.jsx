@@ -23,7 +23,7 @@ const Data = () => {
         drizzle={drizzle}
         drizzleState={state}
         contract="HelloWorld"
-        method={["sentence", 1]}
+        method="sentence"
       />
     </>
   );

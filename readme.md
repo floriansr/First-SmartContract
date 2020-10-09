@@ -3,16 +3,16 @@
 ```
 A web test application allowing users to read a smart-contract: Hello World !
 
-The given startup code can be found in React.js, Truffle.js, Drizzle for the graphical interface and Solidity for writing smart-contracts.
+The given startup code can be found in React, Truffle.js, Drizzle.js for the graphical interface and Solidity for writing smart-contracts.
 ```
 
 * * *
 
 Stack and tools
 
-- React.js, Truffle.js, Drizzle
+- React, Truffle.js, Drizzle.js
 - Solidity
-- Web3, Ganache
+- Ganache, Metamask
 
 * * *
 
@@ -40,7 +40,7 @@ npm install
 npm start
 ```
 
-### Check extension Metamask connection on localhost:3000
+### Check extension Metamask connection to localhost:3000
 ```
 Get private key from Ganache adress and import it to new metamask account
 ```
@@ -60,10 +60,6 @@ truffle compile
 truffle migrate without/with --reset flag
 ```
 
-### Migrate contracts for builds
-```
-truffle migrate without/with --reset flag
-```
 
 ## Author
 
